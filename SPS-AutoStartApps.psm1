@@ -91,6 +91,7 @@ Class SPSAutoStartItem{
         $TaskScheduler = Get-ScheduledTask
         $Services = Get-Service -ErrorAction SilentlyContinue
         $StartupCommands = Get-CimInstance -ClassName win32_startupcommand -ErrorAction SilentlyContinue
+        $StartApps = Get-StartApps -ErrorAction SilentlyContinue
         # define if the current user is administrator to know if the HKLM keys are accessible, this will impact all the "machine" object ReadOnly settings
         $IsAdmin = [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).groups -match 'S-1-5-32-544')
         # Create an object per item in each list
