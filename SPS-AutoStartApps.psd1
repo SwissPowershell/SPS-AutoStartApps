@@ -30,7 +30,7 @@
     Copyright = '(c) 2023 SwissPowershell. All rights reserved.'
     
     # Description of the functionality provided by this module
-    Description = 'Module to retrieve and manipulate the startup applications'
+    Description = 'Module to retrieve and manipulate the applications that can start without user interaction.'
     
     # Minimum version of the Windows PowerShell engine required by this module
     # PowerShellVersion = ''
